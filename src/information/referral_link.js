@@ -1,0 +1,1 @@
+export const REFERRAL_LINK = 'http://ggrus.bet/organicebet/ggbr?param=4376';

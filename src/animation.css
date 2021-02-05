@@ -1,0 +1,69 @@
+.gg-main-tournament.enter-active{
+    animation: 300ms ease-in-out fade-in-up;
+}
+.gg-main-tournament.exit-active{
+    animation: 300ms ease-in-out fade-out-down;
+}
+.gg-main-tournament.enter-done{
+    animation: 300ms ease-in-out fade-in-up;
+}
+.gg-main-tournament.exit-done{
+    animation: 300ms ease-in-out fade-out-down;
+}
+
+.sidebar-menu {
+    opacity: 0;
+}
+
+.sidebar-menu.enter-done {
+    opacity: 1;
+}
+
+.sidebar-menu.enter-active,
+.sidebar-menu.enter-done {
+    animation: 500ms ease-in-out 300ms fade-in-left;
+}
+
+@keyframes fade-in-up {
+    0% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fade-out-down {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+}
+
+@keyframes fade-in-left {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fade-out-left {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+}
